@@ -281,10 +281,3 @@ chmod +x collect_logs.sh
 ./collect_logs.sh
 ```
 
-## ✅ Артефакти для захисту
-
-- [x] Скриншоти `ip a` та `ip neigh`: IP-адреса і видимість шлюзу
-- [x] Скриншот `ss -tuln` з виділеними портами
-- [x] Конфігурація зі статичною IP-адресою ([`configs/`](configs/))
-- [x] Робочий скрипт [`network_test.py`](network_test.py)
-- [x] README з топологією та призначенням портів
