@@ -1,0 +1,15 @@
+# /etc/netplan/01-static.yaml  (Ubuntu)
+# Застосування: sudo netplan apply
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: no
+      addresses:
+        - 172.21.120.120/20
+      routes:
+        - to: default
+          via: 172.21.112.1
+      nameservers:
+        addresses: [8.8.8.8, 1.1.1.1]
